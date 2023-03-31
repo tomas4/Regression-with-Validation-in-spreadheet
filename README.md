@@ -1,7 +1,7 @@
 # Regression-with-Validation-in-spreadheet
 Spreadsheet file with embedded Python script for easy regression with cross-validation.
 
-![screenshot v. 0.1a](https://github.com/tomas4/Regression-with-Validation-in-spreadheet/blob/main/screenshot-v0.1a.png)
+![screenshot v. 0.2a](https://github.com/tomas4/Regression-with-Validation-in-spreadheet/blob/main/screenshot-v0.2a.png)
 
 This project is intended to bring simple way to do cross-validation of regression models in a freely downloadable spreadsheet document. The user should only paste his/her data into sheet of this spreadseet document, set parameters and run the computation. The computaion is caried on in Python, the initial spreadheet application employed is LibreOffice, but Excel version is planned as well.
 
