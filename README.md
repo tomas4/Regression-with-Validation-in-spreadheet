@@ -3,8 +3,8 @@ Spreadsheet file with embedded Python script for easy regression with cross-vali
 
 ![screenshot v. 0.2a](https://github.com/tomas4/Regression-with-Validation-in-spreadheet/blob/main/screenshot-v0.2a.png)
 
-This project is intended to bring simple way to do cross-validation of regression models in a freely downloadable spreadsheet document. The user should only paste his/her data into sheet of this spreadseet document, set parameters and run the computation. The computation is caried on in Python, the initial spreadheet application employed is LibreOffice, but Excel version is planned as well.
+This project aims to provide a simple way to perform cross-validation of regression models in a freely downloadable spreadsheet document. All the user has to do is insert their data into the spreadsheet, set the parameters and perform the calculation. The calculations are performed in Python. LibreOffice is initially used as the spreadsheet programme, but an Excel version is also planned.
 
-This development version allows for simple or multiple linear regression (linear fit) with K-fold cross-validation with selectable k. LOOCV cross-validation, polynomial and other non-linear fits are planned in the future, as well as producing more detailed and streamlined output in the report document.
+This development version allows for simple or multiple linear regression (linear fitting) with K-fold cross-validation with selectable k. LOOCV cross-validation, polynomial and other non-linear fits are planned for the future, as well as producing more detailed and streamlined outputs in the report document.
 
-The underlying Python script is uploaded in the repository also separately, but it is not needed to download it for using the program. All what is needed is the spreadheet file _Regression with validation.ods_, which has the script embedded. User also has to install dependencies of the script, that is to have installed Python with numpy, scikit-learn and pandas libraries. 
+The underlying Python script is also uploaded separately to the repository, but does not need to be downloaded to use the programme. All you need is the worksheet file _Regression with validation.ods_ in which the script is embedded. The user also needs to install the script's dependencies, that is Python with numpy, scikit-learn and pandas libraries. 
