@@ -1,5 +1,5 @@
 # RegressionValidation.py
-# See https://events.documentfoundation.org/media/libocon2021/submissions/FCU9NB/resources/LibOCon_-_ScriptForge_2021-09_-_Rafael_Lima_DWkWAXc.pdf
+# Script to do (multiple) linear regression with crossvalidation within Calc spreadsheet "Regression with validation.ods"
 
 import uno
 
