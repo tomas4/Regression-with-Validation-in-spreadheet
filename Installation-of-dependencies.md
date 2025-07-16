@@ -27,30 +27,46 @@ The key is to always use the *specific Python executable bundled with LibreOffic
 
 **Steps:**
 
-1. **Open Command Prompt/PowerShell:**  
+1. **Open Command Prompt**  
    * Press Win \+ R, type cmd (for Command Prompt) or powershell (for PowerShell), and press Enter.  
-2. **Navigate to LibreOffice's program directory:**  
-   * cd "C:\\Program Files\\LibreOffice\\program"  
-   * *(Note: The python.exe might be directly in program or in a subfolder like python-core-3.x.x\\bin depending on LO version. Adjust path accordingly.)*  
-3. **Install/Update pip:**  
-   * First, download the get-pip.py script:  
-     DOS  
-     powershell \-Command "(Invoke-WebRequest \-Uri 'https://bootstrap.pypa.io/get-pip.py' \-UseBasicParsing).Content | Set-Content 'get-pip.py'"
+2. **Download `get-pip.py` to temporary directory:**  
+   * *Using Command Prompt:*
 
-     *If PowerShell is blocked or you prefer, you can manually download get-pip.py from https://bootstrap.pypa.io/get-pip.py using your browser and save it to the C:\\Program Files\\LibreOffice\\program directory.*  
-   * Then, run the get-pip.py script using LibreOffice's Python:  
-     DOS  
-     .\\python.exe get-pip.py \--user
+   DOS
 
-     *(You might see a warning about pip scripts not being on PATH; this is usually fine for LibreOffice's internal use with python \-m pip.)*  
-4. **Verify pip installation:**  
+   powershell \-Command "(Invoke-WebRequest \-Uri 'https://bootstrap.pypa.io/get-pip.py' \-UseBasicParsing).Content | Set-Content '%TEMP%\\get-pip.py'"
+
+   * *Or manually:*
+
+   If PowerShell is blocked or you prefer, you can manually download get-pip.py from [https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py) using your browser and save it to the directory indicated by typing   
+     echo %TEMP%   
+     in Command Prompt.
+
+   
+
+3. **Locate LibreOffice's Python Executable:**  
+   * *It should be:*
+
+   `"C:\Program Files\LibreOffice\program\python.exe"`
+
+   *(Note: If python.exe is in a subfolder like python-core-3.x.x\\bin, adjust the path accordingly \- even in following commands.)*
+
+4. **Run `get-pip.py` using LibreOffice's Python (from your Temporary directory):**  
+   * Now, you'll execute the `get-pip.py` script that's in your `%TEMP%` folder, using LibreOffice's Python executable, and with the `--user` flag\> 
+
+   
+
    DOS  
-   .\\python.exe \-m pip \--version
+     "C:\\Program Files\\LibreOffice\\program\\python.exe" "%TEMP%\\get-pip.py" \--user
+
+5. **Verify pip installation:**  
+   DOS  
+   "C:\\Program Files\\LibreOffice\\program\\python.exe" \-m pip \--version
 
    You should see output similar to pip 2x.x.x from C:\\Users\\\<YourUser\>\\AppData\\Roaming\\Python\\Python3x\\site-packages\\pip (python 3.x).  
-5. **Install numpy, pandas, scikit-learn:**  
+6. **Install numpy, pandas, scikit-learn:**  
    DOS  
-   .\\python.exe \-m pip install \--user numpy pandas scikit-learn
+   "C:\\Program Files\\LibreOffice\\program\\python.exe" \-m pip install \--user numpy pandas scikit-learn
 
    This command will download and install these packages and their dependencies into your user's Python site-packages directory (e.g., C:\\Users\\\<YourUser\>\\AppData\\Roaming\\Python\\Python3x\\site-packages).
 
@@ -147,5 +163,5 @@ The key is to always use the *specific Python executable bundled with LibreOffic
 * **Python Version:** Always ensure the get-pip.py script you download is compatible with LibreOffice's *specific* Python version (e.g., Python 3.8, Python 3.9). The https://bootstrap.pypa.io/get-pip.py URL usually provides the latest compatible version, but for very old LibreOffice Python, you might need to find an archived version of get-pip.py (e.g., from https://bootstrap.pypa.io/pip/\<python-version\>/get-pip.py).  
 * **Using the Libraries in LibreOffice:** After installation, you can then import and use numpy, pandas, and sklearn in your LibreOffice Python macros just like any other module.
 
-[This video](https://www.youtube.com/watch?v=D15Gqsx8ffg) demonstrates how to install Python on a PC without local admin rights, which is relevant to finding and using LibreOffice's bundled Python for package installation.  
-Install Python on a locked down PC without local admin  
+[This video demonstrates how to install Python on a PC without local admin rights](https://www.youtube.com/watch?v=D15Gqsx8ffg), which is relevant to finding and using LibreOffice's bundled Python for package installation.  
+Install Python on a locked down PC without local admin.  
