@@ -13,6 +13,6 @@ You need a LibreOffice (LO) installation. For Windows users currently not using 
 The underlying Python script is uploaded separately to the repository, but does not need to be downloaded to use the app. All you need is the worksheet file _Regression with validation.ods_ in which the script is embedded already. The user needs to install the script's dependencies, however. That is Python modules [numpy](https://extensions.libreoffice.org/en/extensions/show/41995), scikit-learn and [pandas](https://extensions.libreoffice.org/en/extensions/show/41998) libraries. While it is possible to install numpy and pandas by the linked LO extensions, it is currently not possible for scikit-learn. The standard way to [install Python modules into LO Python is using pip](https://github.com/tomas4/Regression-with-Validation-in-spreadheet/edit/main/Installation-of-dependencies.md). I work on automation of this process within the app.
 
 ## Future development plans
-* Dependencies instalation automation (currently working on it)
+* Dependencies installation automation (currently working on it)
 * Non-linear fitting
 * Excel version
