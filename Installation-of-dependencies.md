@@ -147,5 +147,5 @@ The key is to always use the *specific Python executable bundled with LibreOffic
 * **Python Version:** Always ensure the get-pip.py script you download is compatible with LibreOffice's *specific* Python version (e.g., Python 3.8, Python 3.9). The https://bootstrap.pypa.io/get-pip.py URL usually provides the latest compatible version, but for very old LibreOffice Python, you might need to find an archived version of get-pip.py (e.g., from https://bootstrap.pypa.io/pip/\<python-version\>/get-pip.py).  
 * **Using the Libraries in LibreOffice:** After installation, you can then import and use numpy, pandas, and sklearn in your LibreOffice Python macros just like any other module.
 
-This video demonstrates how to install Python on a PC without local admin rights, which is relevant to finding and using LibreOffice's bundled Python for package installation.  
+[This video](https://www.youtube.com/watch?v=D15Gqsx8ffg) demonstrates how to install Python on a PC without local admin rights, which is relevant to finding and using LibreOffice's bundled Python for package installation.  
 Install Python on a locked down PC without local admin  
