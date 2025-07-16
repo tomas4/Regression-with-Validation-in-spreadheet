@@ -15,4 +15,5 @@ The underlying Python script is uploaded separately to the repository, but does 
 ## Future development plans
 * Dependencies installation automation (currently working on it)
 * Non-linear fitting
+* Variable transformation
 * Excel version
