@@ -1,4 +1,4 @@
-# **Installing scientific Python libraries pandas, scikit-learn, and numpy into LibreOffice's bundled Python environment without administrator rights**
+# **Installing scientific Python libraries pandas, scikit-learn, and numpy into LibreOffice's bundled Python environment**
 
 The key is to always use the *specific Python executable bundled with LibreOffice* for all commands, not your system's general Python.  
 ---
@@ -19,6 +19,7 @@ The key is to always use the *specific Python executable bundled with LibreOffic
 ---
 
 ### **Windows**
+*Note: The instructions for Windows should **not** need administrative privileges to allow working also in resticted (typically corporate) Windows installations.*
 
 **Assumptions:**
 
